@@ -1,11 +1,7 @@
 <meta charset="UTF-8">
-<div style="text-align: center;">
-  <span style="font-size: 6em;">
-    <a href="https://www.babagnu.sh" role="image" aria-label="eggplant">🍆</a>
-  </span>
-</div>
 <h1 align="center">
-  babaGNU.sh
+	<a href="https://www.babagnu.sh" role="image" aria-label="eggplant">🍆<br /><br /></a>
+  	babaGNU.sh
 </h1>
 
 The repository contains the code for [babaGNU.sh](https://babagnu.sh). A personal blog about operating systems and their security.
@@ -40,13 +36,15 @@ The repository contains the code for [babaGNU.sh](https://babagnu.sh). A persona
         ├── pages             (These pages automatically become paths based on thier file name)
         ├── templates         (Gatsby.js code for programmatically creating blog posts)
         └── utils             (React.js directory containing front-end code)
-    ├── static            (Front-end files to not be processed by webpack)
     ├── .gitignore        (Which files git should not track)
+    ├── .prettierignore   (Which files prettier should not format)
     ├── .prettierrc       (Config file for Prettier)
+    ├── static            (Front-end files to not be processed by webpack)
+    ├── LICENSE           (Included MIT license from Gatsby.js)
+    ├── README.md         (The file containing this project structure guide)
     ├── gatsby-browser.js (customization of default Gatsby settings affecting the browser)
     ├── gatsby-config.js  (Main config for Gatsby. Contains site metadata ang Gatsby plugin info)
     ├── gatsby-node.js    (Customization settings for site build process. Usage of Gatsby Node APIs.)
-    ├── LICENSE           (Included MIT license from Gatsby.js)
     ├── package-lock.json (Automatically generated file of exact versions of npm dependencies)
-    ├── package.json      (Manifest for Node.js. Contains project metadata and npm dependencies)
-    └── README.md         (The file containing this project structure guide)
+    └── package.json      (Manifest for Node.js. Contains project metadata and npm dependencies)
+     
