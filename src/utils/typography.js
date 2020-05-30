@@ -73,6 +73,21 @@ const typography = new Typography({
       color: "rgba(131,103,123,.9)",
       textDecorationColor: "rgba(131,103,123,.9)",
     },
+    // High-contrast
+    ".contrast": {
+      color: "white",
+      backgroundColor: "black",
+    },
+    ".contrast h1": {
+      color: "yellow",
+    },
+    ".contrast a": {
+      color: "yellow",
+      textDecorationColor: "yellow",
+    },
+    ".contrast h1 a": {
+      textDecorationColor: "yellow",
+    },
   }),
 })
 

@@ -3,7 +3,7 @@
 import { useState } from "react"
 
 const LOCAL_THEME_KEY = "babaGNUpreferredTheme"
-const DEFAULT_THEME = "dark"
+const DEFAULT_THEME = "contrast"
 const ALTERNATE_THEME = "light"
 
 function getLocalTheme() {

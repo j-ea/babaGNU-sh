@@ -8,6 +8,10 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import Button from 'react-bootstrap/Button'
+import ButtonGroup from 'react-bootstrap/ButtonGroup'
+import Dropdown from 'react-bootstrap/Dropdown'
+import SplitButton from 'react-bootstrap/SplitButton'
 
 import { rhythm } from "../utils/typography"
 import ThemeToggle from "./themeToggle"
@@ -61,6 +65,17 @@ const Bio = () => {
           Written by <strong>{author}</strong><br/>
           Serving up tasty bytes.
           <ThemeToggle />
+          <Dropdown as={ButtonGroup}>
+          <Button variant="success">Split Button</Button>
+
+          <Dropdown.Toggle split variant="success" id="dropdown-split-basic" />
+
+          <Dropdown.Menu>
+            <Dropdown.Item href="#/action-1">Light</Dropdown.Item>
+            <Dropdown.Item href="#/action-2">Dark</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">High Contrast</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
       </div>
     </div>
   )
