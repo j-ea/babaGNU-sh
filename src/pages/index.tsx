@@ -4,6 +4,7 @@ import { PageProps, Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
+import PostMeta from "../components/postMeta"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
@@ -17,6 +18,7 @@ type Data = {
     edges: {
       node: {
         excerpt: string
+        timeToRead: string
         frontmatter: {
           title: string
           date: string
@@ -52,7 +54,8 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <PostMeta date={node.frontmatter.date} readTime={node.timeToRead} />
+              { /* <small>{node.frontmatter.date}</small> */ }
             </header>
             <section>
               <p
@@ -84,6 +87,7 @@ export const pageQuery = graphql`
           fields {
             slug
           }
+          timeToRead
           frontmatter {
             date(formatString: "YYYY-MM-DD")
             title

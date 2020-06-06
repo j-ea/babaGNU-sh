@@ -17,9 +17,9 @@ The repository contains the code for [babaGNU.sh](https://babagnu.sh). A persona
 ## To Do
 
 - [ ] Add high contrast / magnification mode for low vision / visually impared
-- [ ] Add "course" label for "serving" size
-- [ ] Add "read time" to template metadata
-- [ ] Combine the above two ideas into one clean label (i.e. 2 minute dessert or 15 min. plat principal)
+- [x] Add "course" label for "serving" size
+- [x] Add "read time" to template metadata
+- [x] Combine the above two ideas into one clean label (i.e. 2 minute dessert or 15 min. plat principal)
 - [ ] Add RSS feed link
 - [ ] Add multi-language support
 - [ ] Add search bar

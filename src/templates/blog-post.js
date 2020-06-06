@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
+import PostMeta from "../components/postMeta"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
@@ -34,6 +35,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               marginBottom: rhythm(1),
             }}
           >
+            <PostMeta date={post.frontmatter.date} readTime={post.timeToRead} />
             {post.frontmatter.date}
           </p>
         </header>
@@ -91,6 +93,7 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      timeToRead
       frontmatter {
         title
         date(formatString: "YYYY-MM-DD")
