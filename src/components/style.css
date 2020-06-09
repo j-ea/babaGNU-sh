@@ -1,0 +1,60 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .btn {
+    background-color: x010101;
+    padding: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: gray;
+  }
+  
+  .dropbtn {
+    background-color: x010101;
+    padding: 4px;
+    border: none;
+    cursor: pointer;
+    border-left: 1px solid gray;
+  }
+  
+  .dropbtn:hover,
+  .dropbtn:focus {
+    background-color: gray;
+  }
+  
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {
+    background-color: #ddd;
+  }
+  
+  .show {
+    display: block;
+  }
+  
