@@ -1,11 +1,11 @@
 
-// Thanks to https://github.com/jesseflorig for the idea and implementation
+// Thanks to https://github.com/jesseflorig for the idea on how to implement this
 
 import React from "react"
 
 // Given a number of minutes, return a reading time string
 export default function ReadTime({ minutes }) {
-  const label = ` ${minutes} min read`
+  const label = ` ${minutes} min read `
 
   if (minutes < 2) {
     return (
@@ -17,7 +17,7 @@ export default function ReadTime({ minutes }) {
         {label}
       </span>
     )
-  } else if (minutes < 8) {
+  } else if (minutes < 10) {
     return (
       <span>
         <span role="img" aria-label="Falafel">
