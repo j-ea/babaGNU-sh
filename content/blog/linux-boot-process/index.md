@@ -104,7 +104,7 @@ Being the 'init' systemd has a couple special privilges, but really it's just a 
 
 There are two "trees" of processes that start at this point. The first is the systemd tree which we'll discuss in a second. The second, that I'll only mention now are the autonomous non-configurable kernel process that spawn upon initialization. There typically a lot of them, but they general don't effect the user or and don't require and administration. They can be seen with `ps -ef f` at the top of the tree, belonging to `[kthreadd]` that normally has a PID of 2. They will have a low PID, a parent PID of 2, and as kernel processes, they will also have brackets surrounding their name.
 
-For the systemd tree, I think the ASCII chart below from [freedesktop.org](https://www.freedesktop.org/software/systemd/man/bootup.html) does a fair job of illustrating the various parallel systemd processes. If you don't understand what any of this means, I'll try and summarize it here and do a complete post on systemd later.
+For the systemd tree, I think the ASCII chart below from [freedesktop.org](https://www.freedesktop.org/software/systemd/man/bootup.html) does a fair job of illustrating the various parallel systemd processes. If you don't understand what any of this means, I'll try and summarize it in this post and do a complete post on systemd later.
 ```
                                      cryptsetup-pre.target
                                                   |
@@ -160,6 +160,14 @@ emergency.service    |              |              |
 emergency.target                    v
                               graphical.target
 ```
+Really, what all this is, are collections of various services responsible for doing things like:
+- Checking disks
+- Configuring network interfaces
+- Starting up network services
+- Mounting filesystems
+- Removing files from `/tmp`
+- Starting up other services, daemons, and other tasks
+
 To make some sense of the above, let's establish a quick base on systemd. Systemd manages by controlling, e.g. starting, stopping, deconflicting, and managing dependencies or what are called units. Units are just entities managed by systemd typically via a user-configurable configuration file. 
 
 From the systemd man page,
