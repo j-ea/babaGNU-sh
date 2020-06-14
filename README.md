@@ -9,23 +9,28 @@ The repository contains the code for [babaGNU.sh](https://babagnu.sh). A persona
 
 ## Upcoming Posts
 
-- The Linux boot process
+- <del>The Linux boot process</del>
 - The FreeBSD boot process
 - Building profiles for Linux memory forensics
 - Slick shell escapes and TTY shells
+- Speedrunning CTFs and shell games
+
 
 ## To Do
 
-- [ ] Add high contrast / magnification mode for low vision / visually impared
+- [ ] WIP: Add high contrast / magnification mode for low vision / visually impared
 - [x] Add "course" label for "serving" size
 - [x] Add "read time" to template metadata
 - [x] Combine the above two ideas into one clean label (i.e. 2 minute dessert or 15 min. plat principal)
 - [ ] Add RSS feed link
 - [ ] Add multi-language support
 - [ ] Add search bar
-- [ ] Add tags
+- <del>[ ] Add tags</del> scrapping this idea for now for stylization
 - [ ] Add "Tea" and "Current OS" to GraphQL
-
+- [ ] Fix second mysterious second date tag
+- [ ] Fix "serving size" on mobile
+- [ ] Fix "code block or inline code language not specified in markdown. applying generic code block"
+ 
 ## Code Structure
 
     .

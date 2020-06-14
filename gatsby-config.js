@@ -60,7 +60,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        //icon: `/content/assets/polyplant.png`,
+        icon: `static/favicon.png`,
       },
     },
     `gatsby-plugin-react-helmet`,

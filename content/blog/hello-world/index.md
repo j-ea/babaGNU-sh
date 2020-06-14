@@ -8,7 +8,7 @@ Greetings! And welcome to the <del>blue-plate special</del> nantaimori-style com
 
  ## Motivations for this blog
 
- I've been feeling guilty for a while. I couldn't tell you how many times I've been working on an issue only to find the answer in a random blog post, saving me lots of time and headache. Or those times where blog posts helped me brush up on forgotten topics for a job interview. What have I done to pay it forward? <del>Answer some questions here and there on Reddit.</del> Nothing. Do I have answers or information that will even help people? I don’t know, but we'll figure that out together.
+ I've been feeling guilty for a while. I couldn't tell you how many times I've been working on an issue only to find the answer in a random blog post, saving me lots of time and headache. Maybe it was something small, a Bluetooth driver issue. Or something bigger, getting my code to compile for an important project. Or when a stranger on the internet helped me solve a CTF. Or just those times where blog posts helped me brush up on forgotten topics. Maybe even tips for a job interview. You get the point. What have I done to pay it forward? <del>Answer some questions here and there on Reddit.</del> Nothing.
 
 - I've had a lot of people help me tremendously over the years. I want to do more than this blog to give back, but hopefully this it can be a small piece of that. 
 - Explaining a topic is a good way to test knowledge and reinforce. I hope writing in a blog will help me find knowledge gaps on topics I'm writing about, gain a deeper understanding, and solidify learning.

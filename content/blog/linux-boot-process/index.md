@@ -1,7 +1,7 @@
 ---
 title: The Linux Boot Process
 date: "2020-06-09"
-description: "A look at the common modern GNU/Linux boot process (UEFI, GRUB 2, and initramfs)"
+description: "A look at the common modern GNU/Linux boot process (UEFI, GPT, GRUB 2, initramfs, ans systemd)"
 ---
 
 Today sul tavalo we have the Linux boot process. I figured what better place to start than with the boot process, sometimes referred to as bootstrapping, by old school folks, from where the word boot comes.  
@@ -48,7 +48,7 @@ There is so much more to say about UEFI on areas like the EFI shell, modes of op
 
 In the UEFI BDS phase, the GPT partition table is read and EFI System Partitions (ESP) are identified. ESPs are just generic FAT filesystems, that are mounted, read and written like any normal filesystem. These filesystems contain .efi executables (PE/COFF format). The .efi binaries could be any sort of program, but we'll focus on boot related programs. 
 
-At this point once the ESP is identified, a couple things could happen that are scenario and EFI boot manager specific. If a system has settings saved in the NVRAM marking a certain application as the defualt, the UEFI firmware may locate the stored .efi file and execute it from the ESP. Or the UEFI firmware can search for, read, prompt a user, then execute a selected application file from the ESP. These executable, .efi files, are typically found at a standard path. `<ESP partition>/efi/ubuntu/grubx64.efi` (Ubuntu with Grub for example), `<ESP Partition>/EFI/BOOT/BOOTX64.efi` (required by some motherboards *cough* Lenovo K450 *cough*), or `<ESP partition>/EFI/systemd/systemd-bootx64.efi` (an optional Arch setup with systemd-boot).
+At this point once the ESP is identified, a couple things could happen that are scenario and EFI boot manager specific. If a system has settings saved in the NVRAM marking a certain application as the defualt, the UEFI firmware may locate the stored .efi file and execute it from the ESP. Or the UEFI firmware can search for, read, prompt a user, then execute a selected application file from the ESP. These executable, .efi files, are typically found at a standard path. `<ESP partition>/efi/ubuntu/grubx64.efi` (Ubuntu with Grub for example), `<ESP Partition>/EFI/BOOT/BOOTX64.efi` (required by some motherboards *cough* Lenovo K450 *cough*), or `<ESP partition>/EFI/systemd/systemd-bootx64.efi` (an optional Arch setup with systemd-boot). Note that `efi/boot/bootx64.efi` is the fallback boot loader path. Without any pre-existing NVRAM boot settings, this is the only pathname that UEFI firmware will typically look for (on x86-64 systems).
 
 As you can tell, these files will typically be an OS boot loader or boot manager that is located. When one of them is selected, most UEFI will save the pathname as configuration parameter to NVRAM.
 
