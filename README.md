@@ -25,7 +25,7 @@ The repository contains the code for [babaGNU.sh](https://babagnu.sh). A persona
 - [ ] Add RSS feed link
 - [ ] Add multi-language support
 - [ ] Add search bar
-- <del>[ ] Add tags</del> scrapping this idea for now for stylization
+- [ ] <del>Add tags</del> scrapping this idea for now for stylization. With a search feature, this won't be necessary
 - [ ] Add "Tea" and "Current OS" to GraphQL
 - [ ] Fix second mysterious second date tag
 - [ ] Fix "serving size" on mobile

@@ -1,7 +1,7 @@
 ---
 title: The Linux Boot Process
 date: "2020-06-09"
-description: "A look at the common modern GNU/Linux boot process (UEFI, GPT, GRUB 2, initramfs, ans systemd)"
+description: "A look at the common modern GNU/Linux boot process (UEFI, GPT, GRUB 2, initramfs, and systemd)"
 ---
 
 Today sul tavalo we have the Linux boot process. I figured what better place to start than with the boot process, sometimes referred to as bootstrapping, by old school folks, from where the word boot comes.  
