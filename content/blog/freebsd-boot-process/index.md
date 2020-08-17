@@ -1,7 +1,7 @@
 ---
 title: The FreeBSD Boot Process
 date: "2020-07-05"
-description: ""
+description: "A modern look from boot1.efi to rc"
 ---
 
 For the sake of completeness after my last post about the modern Linux boot process, I will cover a few other operating systems' boot processes with a modern look (GPT/UEFI, etc.). I will start with FreeBSD. 
